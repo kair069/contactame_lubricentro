@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+  header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+
+  .about-section {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #3498db;
+    color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .team-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #ecf0f1;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .team-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .column {
+    width: 30%;
+    margin: 2%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .column:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover img {
+    transform: scale(1.05);
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .container p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+  }
+
+  .title {
+    font-size: 18px;
+    color: #777;
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #2980b9;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .column {
+      width: 45%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .column {
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+
+  header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+
+  .about-section {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 40px;
+    background-color: #ecf0f1;
+    color: #333;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+  }
+
+  .about-section h1 {
+    font-size: 36px;
+    color: #3498db;
+    margin-bottom: 20px;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Alexandro S.R.L</h1>
+</header>
+
+<div class="about-section">
+    <h1>Bienvenido a Alexandro SRL</h1>
+    <p>Somos más que un simple proveedor de aceites para vehículos. En Alexandro SRL, nos dedicamos apasionadamente a ofrecer productos de la más alta calidad diseñados para mantener tu motor en condiciones óptimas.</p>
+    <p>Nuestra misión es simple pero poderosa: proporcionar soluciones excepcionales para el cuidado y rendimiento de tu vehículo. Entendemos la importancia de un motor eficiente y confiable, y nos esforzamos por ser tu socio de confianza en este viaje automotriz.</p>
+    <p>En cada gota de nuestro aceite, encontrarás dedicación, compromiso y la búsqueda constante de la excelencia. Nos enorgullece ser parte de tu experiencia automotriz, brindándote productos que marcan la diferencia.</p>
+    <p>Te invitamos a explorar más sobre nosotros, nuestros valores y la calidad que nos distingue. Descubre cómo Alexandro SRL puede elevar la performance y prolongar la vida de tu motor.</p>
+  
+  
+</div>
+
+<div class="team-section">
+  <h2>Nuestro Equipo</h2>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="https://img.freepik.com/foto-gratis/mecanico-automoviles-sonriente-llave-pie-manos-dobladas-sobre-fondo-blanco_662251-2939.jpg" alt="Alejandro">
+        <div class="container">
+          <h2>Alejandro Rodríguez</h2>
+          <p class="title">CEO & Fundador</p>
+          <p>Apasionado por la excelencia en la industria automotriz. ¡Conócelo y descubre su visión para Alexandro SRL!</p>
+          <p>alejandro@example.com</p>
+          <p><button class="button">Contactar</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="https://aprende.com/wp-content/uploads/2022/09/medidas-de-seguridad-taller.jpg" alt="Mónica">
+        <div class="container">
+          <h2>Mónica González</h2>
+          <p class="title">Directora de Arte</p>
+          <p>Experta en diseño y creatividad, Mónica asegura que cada producto lleve consigo una estética única y atractiva.</p>
+          <p>monica@example.com</p>
+          <p><button class="button">Contactar</button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="https://media.licdn.com/dms/image/D4E12AQHn3zr1KWk4ng/article-inline_image-shrink_1500_2232/0/1688370526365?e=1709164800&v=beta&t=Nc2rDhhS5PQ7-dQZ72_Wcmw4AFkxbbDM4W4r0JrGZ1c" alt="Carlos">
+        <div class="container">
+          <h2>Carlos García</h2>
+          <p class="title">Diseñador</p>
+          <p>Con una pasión por la innovación, Carlos aporta su creatividad para desarrollar productos que superan las expectativas.</p>
+          <p>carlos@example.com</p>
+          <p><button class="button">Contactar</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
